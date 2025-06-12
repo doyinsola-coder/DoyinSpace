@@ -46,7 +46,7 @@ export default function About() {
           className="flex justify-center"
         >
           <img
-            src="https://via.placeholder.com/300x300.png?text=DoyinSpace"
+            src="/DoyinSpace.png"
             alt="DoyinSpace Avatar"
             className="rounded-2xl shadow-lg max-w-xs md:max-w-sm"
           />
