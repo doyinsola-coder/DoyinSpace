@@ -22,7 +22,7 @@ export default function About() {
           </p>
 
           <p className="text-gray-400 mb-4">
-            I'm driven by clean code, sharp UI, and building meaningful digital experiences.
+            I'm driven by clean code, sharp UI, and building and creative meaningful digital experiences.
           </p>
 
           <div>
