@@ -4,21 +4,21 @@ const projects = [
   {
     title: "Portfolio Website",
     description: "A sleek and modern developer portfolio built with React and Tailwind CSS.",
-    image: "https://via.placeholder.com/400x250.png?text=Project+1",
-    demoLink: "https://your-portfolio-link.com",
+    image: "/DoyinSpacePortfolio.png",
+    demoLink: "https://doyin-space.vercel.app/",
     githubLink: "https://github.com/yourusername/doyinspace"
   },
   {
     title: "Online Restaurant",
     description: "A sleek restaurant app as a demo , React, and Tailwind.",
-    image: "https://via.placeholder.com/400x250.png?text=Project+2",
-    demoLink: "https://your-weather-app.com",
+    image: "/EatOut.png",
+    demoLink: "https://eat-out-doyinsola-coders-projects.vercel.app/",
     githubLink: "https://vercel.com/doyinsola-coders-projects/eat-out"
   },
   {
     title: "Todo App",
     description: "A simple yet powerful todo manager with filtering and localStorage.",
-    image: "https://via.placeholder.com/400x250.png?text=Project+3",
+    image: "todo.png",
     demoLink: "https://your-todo-app.com",
     githubLink: "https://github.com/yourusername/todo-app"
   },
