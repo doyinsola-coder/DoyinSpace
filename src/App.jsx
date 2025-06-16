@@ -7,6 +7,7 @@ import Contact from './pages/Contact.jsx';
 import About from './pages/About.jsx';
 import Footer from './components/Footer.jsx';
 import Projects from './pages/Projects.jsx';
+
 function App() {
   
 
