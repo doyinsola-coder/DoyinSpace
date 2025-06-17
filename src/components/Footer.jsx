@@ -20,7 +20,7 @@ const Footer = () => {
         {/* Social Icons */}
         <div className="flex space-x-4 text-xl">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/doyinsola-coder"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-emerald-400 transition"
@@ -28,7 +28,7 @@ const Footer = () => {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://linkedin.com/in/DoyinSpace"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-emerald-400 transition"
@@ -36,7 +36,7 @@ const Footer = () => {
             <FaLinkedin />
           </a>
           <a
-            href="mailto:youremail@example.com"
+            href="mailto:doyinspace@gmail.com"
             className="hover:text-emerald-400 transition"
           >
             <FaEnvelope />

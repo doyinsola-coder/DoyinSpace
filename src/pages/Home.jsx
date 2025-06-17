@@ -2,6 +2,19 @@ import React from "react";
 import { FaReact } from "react-icons/fa";
 import { motion } from "framer-motion";
 
+const fadeInUp = {
+  initial: { opacity: 0, y: 40 },
+  animate: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+};
+
+const staggerContainer = {
+  animate: {
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
 export default function App() {
   return (
     <div className="min-h-screen bg-gray-900 text-white font-sans">
@@ -14,61 +27,109 @@ export default function App() {
         >
           <FaReact />
         </motion.div>
-        <h1 className="text-4xl md:text-5xl font-bold">
+
+        <motion.h1
+          variants={fadeInUp}
+          initial="initial"
+          animate="animate"
+          className="text-4xl md:text-5xl font-bold"
+        >
           <span className="text-white">Doy</span>
           <span className="text-blue-400">in</span>
           <span className="text-white">Space</span>
-        </h1>
-        <p className="text-gray-300 text-lg max-w-md">
+        </motion.h1>
+
+        <motion.p
+          variants={fadeInUp}
+          initial="initial"
+          animate="animate"
+          className="text-gray-300 text-lg max-w-md"
+        >
           I'm Mubeen Doyinsola Abdulateef — a React & Tailwind developer building clean, creative web apps.
-        </p>
-        <a
+        </motion.p>
+
+        <motion.a
+          variants={fadeInUp}
+          initial="initial"
+          animate="animate"
           href="/projects"
           className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-2xl text-sm shadow-lg"
         >
           See My Work
-        </a>
+        </motion.a>
       </section>
 
       {/* About Me */}
-      <section className="max-w-4xl mx-auto px-6 py-16" id="about">
+      <motion.section
+        id="about"
+        className="max-w-4xl mx-auto px-6 py-16"
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.7 }}
+        viewport={{ once: true }}
+      >
         <h2 className="text-2xl font-bold mb-4">About Me</h2>
         <p className="text-gray-300 leading-relaxed">
           I'm a frontend developer passionate about intuitive UIs, component architecture, and smooth animations.
           I build with React, Tailwind, and modern tools to bring designs to life — clean, fast, and responsive.
         </p>
-      </section>
+      </motion.section>
 
       {/* Projects */}
-      <section className="bg-gray-800 py-16 px-6" id="projects">
+      <motion.section
+        id="projects"
+        className="bg-gray-800 py-16 px-6"
+        variants={staggerContainer}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+      >
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl font-bold mb-6 text-center">Projects</h2>
+          <motion.h2
+            variants={fadeInUp}
+            className="text-2xl font-bold mb-6 text-center"
+          >
+            Projects
+          </motion.h2>
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-gray-700 p-6 rounded-xl shadow">
-              <h3 className="text-xl font-semibold">Portfolio Site</h3>
-              <p className="text-gray-300 mt-2">My own portfolio built with React + Tailwind + Framer Motion.</p>
-            </div>
-            <div className="bg-gray-700 p-6 rounded-xl shadow">
-              <h3 className="text-xl font-semibold">E-commerce UI</h3>
-              <p className="text-gray-300 mt-2">Responsive, fast-loading UI using fake store API & Tailwind.</p>
-            </div>
+            {[1, 2].map((i) => (
+              <motion.div
+                key={i}
+                variants={fadeInUp}
+                whileHover={{ scale: 1.03 }}
+                className="bg-gray-700 p-6 rounded-xl shadow hover:shadow-xl transition"
+              >
+                <h3 className="text-xl font-semibold">
+                  {i === 1 ? "Portfolio Site" : "E-commerce UI"}
+                </h3>
+                <p className="text-gray-300 mt-2">
+                  {i === 1
+                    ? "My own portfolio built with React + Tailwind + Framer Motion."
+                    : "Responsive, fast-loading UI using fake store API & Tailwind."}
+                </p>
+              </motion.div>
+            ))}
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Contact CTA */}
-      <section className="py-16 text-center">
+      <motion.section
+        className="py-16 text-center"
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      >
         <h2 className="text-2xl font-bold">Let’s Build Something Together</h2>
         <p className="text-gray-400 mt-2">Reach out if you want to collaborate or hire me.</p>
         <a
           href="/contact"
-          className="inline-block mt-4 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-xl"
+          className="inline-block mt-4 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-xl transition-all"
         >
           Contact Me
         </a>
-      </section>
-
-      
+      </motion.section>
     </div>
   );
 }
