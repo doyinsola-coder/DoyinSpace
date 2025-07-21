@@ -65,7 +65,7 @@ export default function About() {
           className="flex justify-center"
         >
           <img
-            src="/DoyinSpace.png"
+            src="https://res.cloudinary.com/decgjhtlb/image/upload/v1753095123/DoyinSpace_dd4vn5.png"
             alt="DoyinSpace Avatar"
             className="rounded-2xl shadow-lg max-w-xs md:max-w-sm border border-[#00BFFF]"
           />
