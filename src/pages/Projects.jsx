@@ -5,28 +5,28 @@ const projects = [
   {
     title: "FreshFinds",
     description: "A sleek and modern e-commerce web app built with React and Tailwind CSS.",
-    image: "/Favicon.png",
+    image: "https://res.cloudinary.com/decgjhtlb/image/upload/v1753095124/Favicon_hs3xar.png",
     demoLink: "https://github.com/doyinsola-coder/FreshFinds.git",
     githubLink: "https://github.com/doyinsola-coder/FreshFinds.git"
   },
   {
     title: "Online Restaurant",
     description: "A sleek restaurant app as a demo , React, and Tailwind.",
-    image: "/EatOut.png",
+    image: "https://res.cloudinary.com/decgjhtlb/image/upload/v1753095124/EatOut_rhvbay.png",
     demoLink: "https://eat-out-doyinsola-coders-projects.vercel.app/",
     githubLink: "https://vercel.com/doyinsola-coders-projects/eat-out"
   },
   {
     title: "An Islamic learning and quiz platform",
     description: "A simple yet powerful islamic seerah and quiz web app.",
-    image: "Echoes.png",
+    image: "https://res.cloudinary.com/decgjhtlb/image/upload/v1753095124/Echoes_zp1jgc.png",
     demoLink: "https://echoes-of-madinah.vercel.app/",
     githubLink: "https://github.com/doyinsola-coder/Echoes-Of-Madinah.git"
   },
   {
     title: "Totes N More",
     description:"A modern appreciation platform for Totes N More.",
-    image: "/TotesNMore.png",
+    image: "https://res.cloudinary.com/decgjhtlb/image/upload/v1753095124/TotesNMore_htyiu0.png",
     demoLink:"https://totes-n-more.vercel.app/",
     githubLink: "https://github.com/doyinsola-coder/TotesNMore.git"
   },
