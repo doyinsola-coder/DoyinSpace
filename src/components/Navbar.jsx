@@ -6,7 +6,7 @@ import React from "react";
 
 // 👇 Editable Nav Links
 const links = [
-    { label: "Home", href: "/" },
+  { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Projects", href: "/projects" },
   { label: "Contact", href: "/contact" },
@@ -16,18 +16,18 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed w-full z-50 bg-gray-900 text-white shadow">
+    <nav className="fixed w-full z-50 bg-black text-white shadow-md">
       <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo with hover animation */}
         <motion.div
           whileHover={{ rotate: [0, -5, 5, -5, 0] }}
           transition={{ duration: 0.5 }}
-          className="flex items-center space-x-2 text-blue-400 text-xl font-bold cursor-pointer"
+          className="flex items-center space-x-2 text-cyan-400 text-xl font-bold cursor-pointer"
         >
           <FaReact />
           <span className="text-white">Doy</span>
-          <span className="text-blue-400">in</span>
-          <span className="text-white">Space</span>
+          <span className="text-cyan-400">in</span>
+          <span className="text-emerald-400">Space</span>
         </motion.div>
 
         {/* Desktop Nav */}
@@ -36,7 +36,7 @@ export default function Navbar() {
             <li key={label}>
               <a
                 href={href}
-                className="text-gray-300 hover:text-blue-400 transition-colors duration-300"
+                className="text-gray-300 hover:text-cyan-400 transition-colors duration-300"
               >
                 {label}
               </a>
@@ -58,14 +58,14 @@ export default function Navbar() {
         <motion.ul
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="md:hidden flex flex-col space-y-4 px-6 pb-6 bg-gray-800 text-sm"
+          className="md:hidden flex flex-col space-y-4 px-6 pb-6 bg-[#0f0f0f] text-sm"
         >
           {links.map(({ label, href }) => (
             <li key={label}>
               <a
                 href={href}
                 onClick={() => setOpen(false)}
-                className="block py-2 text-gray-300 hover:text-blue-400"
+                className="block py-2 text-gray-300 hover:text-cyan-400"
               >
                 {label}
               </a>

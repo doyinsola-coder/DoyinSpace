@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Logo from './pages/Logo.jsx';
 import Home from './pages/Home.jsx';
 import Navbar from './components/Navbar.jsx';
 import Contact from './pages/Contact.jsx';
@@ -15,7 +14,6 @@ function App() {
     <>
 <BrowserRouter>
 <Navbar/>
-<Logo/>
 <Routes>
 <Route path="/" element={<Home />} />
 <Route path="/contact" element={<Contact />} />

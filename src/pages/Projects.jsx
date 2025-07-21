@@ -16,8 +16,8 @@ const projects = [
     githubLink: "https://vercel.com/doyinsola-coders-projects/eat-out"
   },
   {
-    title: "Todo App",
-    description: "A simple yet powerful todo manager with filtering and localStorage.",
+    title: "An Islamic learning and quiz platform",
+    description: "A simple yet powerful islamic seerah and quiz web app.",
     image: "todo.png",
     demoLink: "https://your-todo-app.com",
     githubLink: "https://github.com/yourusername/todo-app"
